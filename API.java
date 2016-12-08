@@ -1,11 +1,6 @@
 package thanggun99.quanlynhahang.util;
 
 import android.net.Uri;
-import android.os.AsyncTask;
-
-import org.json.JSONArray;
-import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -14,14 +9,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
-import java.util.HashMap;
 import java.util.Map;
-
-import thanggun99.quanlynhahang.interfaces.OnFinishProgressListener;
-import thanggun99.quanlynhahang.model.entity.HoaDon;
-import thanggun99.quanlynhahang.model.entity.ThucDon;
-import thanggun99.quanlynhahang.model.entity.ThucDonOrder;
-import thanggun99.quanlynhahang.model.phucvu.ThucDonManager;
 
 /**
  * Created by Thanggun99 on 17/11/2016.
