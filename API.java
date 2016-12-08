@@ -56,16 +56,15 @@ public class API {
                     Uri.Builder builderPostParams = new Uri.Builder();
                     builderPostParams = Utils.builderParams(builderPostParams, paramsPost);
 
-                    if (builderPostParams != null) {
-                        connect.setRequestProperty("Content-Type",
-                                "application/x-www-form-urlencoded;charset=UTF-8");
-                        connect.setRequestMethod("POST");
-                        connect.setDoOutput(true);
+                    connect.setRequestProperty("Content-Type",
+                            "application/x-www-form-urlencoded;charset=UTF-8");
+                    connect.setRequestMethod("POST");
+                    connect.setDoOutput(true);
 
-                        OutputStream outputStream = connect.getOutputStream();
-                        outputStream.write(builderPostParams.build().getEncodedQuery().getBytes());
-                        outputStream.close();
-                    }
+                    OutputStream outputStream = connect.getOutputStream();
+                    outputStream.write(builderPostParams.build().getEncodedQuery().getBytes());
+                    outputStream.close();
+
                 }
             } else connect.setRequestMethod("GET");
 
