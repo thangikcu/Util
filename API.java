@@ -96,4 +96,10 @@ public class API {
         return response;
     }
 
+    public static Uri.Builder builderParams(Uri.Builder builder, Map<String, String> params){
+        for (Map.Entry<String, String> entry : params.entrySet()){
+            builder.appendQueryParameter(entry.getKey(), entry.getValue());
+        }
+        return builder;
+    }
 }
