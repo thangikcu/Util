@@ -51,21 +51,18 @@ public class API {
             connect.setRequestProperty("Connection", "close");
             connect.setDoInput(true);
 
-            if (method == POST) {
-                if (paramsPost != null) {
-                    Uri.Builder builderPostParams = new Uri.Builder();
-                    builderPostParams = Utils.builderParams(builderPostParams, paramsPost);
+            if (method == POST && paramsPost != null) {
+                Uri.Builder builderPostParams = new Uri.Builder();
+                builderPostParams = Utils.builderParams(builderPostParams, paramsPost);
 
-                    connect.setRequestProperty("Content-Type",
-                            "application/x-www-form-urlencoded;charset=UTF-8");
-                    connect.setRequestMethod("POST");
-                    connect.setDoOutput(true);
+                connect.setRequestProperty("Content-Type",
+                        "application/x-www-form-urlencoded;charset=UTF-8");
+                connect.setRequestMethod("POST");
+                connect.setDoOutput(true);
 
-                    OutputStream outputStream = connect.getOutputStream();
-                    outputStream.write(builderPostParams.build().getEncodedQuery().getBytes());
-                    outputStream.close();
-
-                }
+                OutputStream outputStream = connect.getOutputStream();
+                outputStream.write(builderPostParams.build().getEncodedQuery().getBytes());
+                outputStream.close();
             } else connect.setRequestMethod("GET");
 
             is = connect.getInputStream();
