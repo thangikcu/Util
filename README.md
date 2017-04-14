@@ -9,3 +9,5 @@
 `compile 'com.google.code.gson:gson:2.8.0'`
 
 `compile 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'`
+
+`compile 'de.hdodenhof:circleimageview:2.1.0'`
