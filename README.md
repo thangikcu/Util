@@ -11,3 +11,13 @@
 `compile 'com.github.JakeWharton:ViewPagerIndicator:2.4.1'`
 
 `compile 'de.hdodenhof:circleimageview:2.1.0'`
+
+`compile 'com.kyleduo.switchbutton:library:1.4.5'`
+
+
+
+`compile 'com.mikepenz:iconics-core:2.8.3@aar'`
+`compile 'com.mikepenz:fontawesome-typeface:4.7.0.0@aar'`
+`compile 'com.mikepenz:ionicons-typeface:2.0.1.2@aar'`
+
+
