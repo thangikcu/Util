@@ -23,3 +23,6 @@
 `compile 'com.mikepenz:ionicons-typeface:2.0.1.2@aar'`
 
 
+`compile 'com.github.curioustechizen.android-ago:library:1.3.4'`
+
+
