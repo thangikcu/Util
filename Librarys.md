@@ -26,3 +26,9 @@
 `compile 'com.github.curioustechizen.android-ago:library:1.3.4'`
 
 
+configurations.all {
+    resolutionStrategy.dependencySubstitution {
+        substitute module('org.apache.commons:commons-io:1.3.2') with module('commons-io:commons-io:1.3.2')
+    }
+}
+
